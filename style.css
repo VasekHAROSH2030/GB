@@ -61,12 +61,6 @@ section {
     margin: 0.5em 0;
 }
 
-/* Анимация для портфолио */
-.portfolio-item.animate {
-    transform: translateY(-10px);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-}
-
 /* Стили для футера */
 footer {
     text-align: center;
