@@ -4,63 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Мое Портфолио</title>
-    <link  
-    <style>
-        /* Общие стили */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-
-        header {
-            background-color: #333;
-            color: white;
-            padding: 1em 0;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin: 0 1em;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-        }
-
-        /* Секции */
-        section {
-            margin: 2em 0;
-            padding: 2em;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        #work .portfolio-item {
-            margin-bottom: 1em;
-        }
-
-        /* Стили для футера */
-        footer {
-            text-align: center;
-            padding: 1em 0;
-            background-color: #333;
-            color: white;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -82,14 +26,21 @@
     <section id="work">
         <h2>Мои работы</h2>
         <div class="portfolio-item">
-            <h3>Название проекта 1</h3>
+            <h3>Название проекта 1 🌟</h3>
             <p>Описание проекта 1</p>
         </div>
         <div class="portfolio-item">
-            <h3>Название проекта 2</h3>
+            <h3>Название проекта 2 🎨</h3>
             <p>Описание проекта 2</p>
         </div>
-        <!-- Добавь сюда больше проектов при необходимости -->
+        <div class="portfolio-item">
+            <h3>Название проекта 3 🚀</h3>
+            <p>Описание проекта 3</p>
+        </div>
+        <div class="portfolio-item">
+            <h3>Название проекта 4 💻</h3>
+            <p>Описание проекта 4</p>
+        </div>
     </section>
 
     <section id="contact">
@@ -101,5 +52,17 @@
     <footer>
         <p>&copy; 2024 Твое Имя. Все права защищены.</p>
     </footer>
+
+    <script>
+        // Анимация для элементов портфолио
+        document.querySelectorAll('.portfolio-item').forEach(item => {
+            item.addEventListener('mouseenter', () => {
+                item.classList.add('animate');
+            });
+            item.addEventListener('mouseleave', () => {
+                item.classList.remove('animate');
+            });
+        });
+    </script>
 </body>
 </html>
